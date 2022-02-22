@@ -1,5 +1,6 @@
 package com.desaerun.streamrecorder.ffmpeg;
 
+import com.desaerun.streamrecorder.ffmpeg.config.AbstractCaptureConfig;
 import net.bramp.ffmpeg.job.FFmpegJob;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,9 +11,9 @@ public class CaptureThread extends Thread {
     public static final Logger LOG = LoggerFactory.getLogger(CaptureThread.class);
 
     private FFmpegJob job;
-    private CaptureConfig config;
+    private AbstractCaptureConfig config;
 
-    public CaptureThread(FFmpegJob job, CaptureConfig config) {
+    public CaptureThread(FFmpegJob job, AbstractCaptureConfig config) {
         super(checkNotNull(job, "job must not be null!"));
 
         this.job = job;
@@ -34,7 +35,7 @@ public class CaptureThread extends Thread {
         return job;
     }
 
-    public CaptureConfig getConfig() {
+    public AbstractCaptureConfig getConfig() {
         return config;
     }
 }

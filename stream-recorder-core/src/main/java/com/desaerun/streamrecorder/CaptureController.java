@@ -2,20 +2,24 @@ package com.desaerun.streamrecorder;
 
 import com.desaerun.streamrecorder.ffmpeg.CaptureThread;
 import com.desaerun.streamrecorder.ffmpeg.JobThread;
-import com.desaerun.streamrecorder.ffmpeg.CaptureConfig;
+import com.desaerun.streamrecorder.ffmpeg.config.AbstractCaptureConfig;
 import net.bramp.ffmpeg.FFmpeg;
 import net.bramp.ffmpeg.FFmpegExecutor;
 import net.bramp.ffmpeg.job.FFmpegJob;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.*;
 
 public class CaptureController {
+    private static final Logger LOG = LoggerFactory.getLogger(CaptureController.class);
+
     final FFmpeg ffmpeg;
 
     final FFmpegExecutor executor;
 
-    final List<CaptureConfig> configs = new ArrayList<>();
+    final List<AbstractCaptureConfig> configs = new ArrayList<>();
 
     final Map<String, CaptureThread> captures = new HashMap<>();
 
@@ -25,11 +29,11 @@ public class CaptureController {
         executor = new FFmpegExecutor(ffmpeg);
     }
 
-    public List<CaptureConfig> getConfigs() {
+    public List<AbstractCaptureConfig> getConfigs() {
         return configs;
     }
 
-    public CaptureController addConfig(CaptureConfig config) {
+    public CaptureController addConfig(AbstractCaptureConfig config) {
         if (config == null) {
             return this;
         }
@@ -50,7 +54,7 @@ public class CaptureController {
         return captures.get(name);
     }
 
-    public CaptureThread start(CaptureConfig config) {
+    public CaptureThread start(AbstractCaptureConfig config) {
         CaptureThread captureThread = captures.get(config.getName());
 
         if (captureThread == null) {
@@ -71,7 +75,7 @@ public class CaptureController {
     }
 
     public void startAll() {
-        for (CaptureConfig config : configs) {
+        for (AbstractCaptureConfig config : configs) {
             start(config);
         }
     }
