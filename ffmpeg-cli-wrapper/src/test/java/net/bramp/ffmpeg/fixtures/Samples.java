@@ -1,4 +1,4 @@
-package net.bramp.ffmpeg.fixtures;
+package com.desaerun.ffmpeg.fixtures;
 
 public final class Samples {
   private Samples() {
@@ -6,7 +6,7 @@ public final class Samples {
   }
 
   // Test sample files (only a handful to keep the repo small)
-  public static final String TEST_PREFIX = "src/test/resources/net/bramp/ffmpeg/samples/";
+  public static final String TEST_PREFIX = "src/test/resources/com.desaerun.ffmpeg/samples/";
 
   public static final String base_big_buck_bunny_720p_1mb = "big_buck_bunny_720p_1mb.mp4";
   public static final String base_testscreen_jpg = "testscreen.jpg";

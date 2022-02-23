@@ -1,9 +1,9 @@
-package net.bramp.ffmpeg.builder;
+package com.desaerun.ffmpeg.builder;
 
 import org.junit.Test;
 
-import static net.bramp.ffmpeg.builder.StreamSpecifier.*;
-import static net.bramp.ffmpeg.builder.StreamSpecifierType.*;
+import static com.desaerun.ffmpeg.builder.StreamSpecifier.*;
+import static com.desaerun.ffmpeg.builder.StreamSpecifierType.*;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 

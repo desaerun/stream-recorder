@@ -1,7 +1,7 @@
-package net.bramp.ffmpeg.progress;
+package com.desaerun.ffmpeg.progress;
 
 import com.google.common.io.ByteStreams;
-import net.bramp.ffmpeg.fixtures.Progresses;
+import com.desaerun.ffmpeg.fixtures.Progresses;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.net.InetAddress;
 import java.net.URISyntaxException;
 import java.util.List;
 
-import static net.bramp.ffmpeg.Helper.loadResource;
+import static com.desaerun.ffmpeg.Helper.loadResource;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
 

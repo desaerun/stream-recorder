@@ -1,14 +1,14 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
 import com.google.common.base.MoreObjects;
-import net.bramp.ffmpeg.builder.FFmpegBuilder;
-import net.bramp.ffmpeg.fixtures.Samples;
-import net.bramp.ffmpeg.job.FFmpegJob;
-import net.bramp.ffmpeg.probe.FFmpegFormat;
-import net.bramp.ffmpeg.probe.FFmpegProbeResult;
-import net.bramp.ffmpeg.probe.FFmpegStream;
-import net.bramp.ffmpeg.progress.Progress;
-import net.bramp.ffmpeg.progress.ProgressListener;
+import com.desaerun.ffmpeg.builder.FFmpegBuilder;
+import com.desaerun.ffmpeg.fixtures.Samples;
+import com.desaerun.ffmpeg.job.FFmpegJob;
+import com.desaerun.ffmpeg.probe.FFmpegFormat;
+import com.desaerun.ffmpeg.probe.FFmpegProbeResult;
+import com.desaerun.ffmpeg.probe.FFmpegStream;
+import com.desaerun.ffmpeg.progress.Progress;
+import com.desaerun.ffmpeg.progress.ProgressListener;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -95,7 +95,7 @@ public class ReadmeTest {
     assertThat(
         line1,
         is(
-            "File: 'src/test/resources/net/bramp/ffmpeg/samples/big_buck_bunny_720p_1mb.mp4' ; Format: 'QuickTime / MOV' ; Duration: 5.312s"));
+            "File: 'src/test/resources/com.desaerun.ffmpeg/samples/big_buck_bunny_720p_1mb.mp4' ; Format: 'QuickTime / MOV' ; Duration: 5.312s"));
     assertThat(
         line2,
         is("Codec: 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10' ; Width: 1280px ; Height: 720px"));

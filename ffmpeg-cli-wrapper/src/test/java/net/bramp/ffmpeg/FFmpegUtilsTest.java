@@ -1,10 +1,10 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static net.bramp.ffmpeg.FFmpegUtils.*;
+import static com.desaerun.ffmpeg.FFmpegUtils.*;
 import static org.junit.Assert.assertEquals;
 
 public class FFmpegUtilsTest {

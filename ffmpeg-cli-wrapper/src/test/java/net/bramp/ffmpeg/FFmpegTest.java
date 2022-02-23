@@ -1,8 +1,8 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
-import net.bramp.ffmpeg.fixtures.Codecs;
-import net.bramp.ffmpeg.fixtures.Formats;
-import net.bramp.ffmpeg.lang.NewProcessAnswer;
+import com.desaerun.ffmpeg.fixtures.Codecs;
+import com.desaerun.ffmpeg.fixtures.Formats;
+import com.desaerun.ffmpeg.lang.NewProcessAnswer;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

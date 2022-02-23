@@ -1,7 +1,7 @@
 package com.desaerun.streamrecorder.ffmpeg;
 
 import com.desaerun.streamrecorder.ffmpeg.config.AbstractCaptureConfig;
-import net.bramp.ffmpeg.job.FFmpegJob;
+import com.desaerun.ffmpeg.job.FFmpegJob;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

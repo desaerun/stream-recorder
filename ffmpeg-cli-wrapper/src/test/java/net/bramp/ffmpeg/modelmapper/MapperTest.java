@@ -1,10 +1,10 @@
-package net.bramp.ffmpeg.modelmapper;
+package com.desaerun.ffmpeg.modelmapper;
 
-import net.bramp.ffmpeg.builder.FFmpegOutputBuilder;
-import net.bramp.ffmpeg.options.AudioEncodingOptions;
-import net.bramp.ffmpeg.options.EncodingOptions;
-import net.bramp.ffmpeg.options.MainEncodingOptions;
-import net.bramp.ffmpeg.options.VideoEncodingOptions;
+import com.desaerun.ffmpeg.builder.FFmpegOutputBuilder;
+import com.desaerun.ffmpeg.options.AudioEncodingOptions;
+import com.desaerun.ffmpeg.options.EncodingOptions;
+import com.desaerun.ffmpeg.options.MainEncodingOptions;
+import com.desaerun.ffmpeg.options.VideoEncodingOptions;
 import org.junit.Test;
 
 public class MapperTest {

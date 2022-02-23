@@ -1,8 +1,6 @@
 package com.desaerun.streamrecorder.ffmpeg.config;
 
-import net.bramp.ffmpeg.builder.FFmpegBuilder;
-
-import static com.google.common.base.Preconditions.checkNotNull;
+import com.desaerun.ffmpeg.builder.FFmpegBuilder;
 
 public abstract class AbstractCaptureConfig {
     private String name;

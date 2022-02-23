@@ -1,4 +1,4 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;

@@ -1,4 +1,4 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

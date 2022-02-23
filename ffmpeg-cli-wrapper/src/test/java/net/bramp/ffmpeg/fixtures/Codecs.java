@@ -1,7 +1,7 @@
-package net.bramp.ffmpeg.fixtures;
+package com.desaerun.ffmpeg.fixtures;
 
 import com.google.common.collect.ImmutableList;
-import net.bramp.ffmpeg.info.Codec;
+import com.desaerun.ffmpeg.info.Codec;
 
 import java.util.List;
 

@@ -42,7 +42,7 @@
 
 
 
-        <!-- https://mvnrepository.com/artifact/net.bramp.ffmpeg/ffmpeg -->
+        <!-- https://mvnrepository.com/artifact/com.desaerun.ffmpeg/ffmpeg -->
         <dependency>
             <groupId>com.desaerun</groupId>
             <artifactId>ffmpeg</artifactId>

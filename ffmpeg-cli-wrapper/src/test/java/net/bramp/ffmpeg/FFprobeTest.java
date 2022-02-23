@@ -1,11 +1,11 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
 import com.google.gson.Gson;
-import net.bramp.ffmpeg.fixtures.Samples;
-import net.bramp.ffmpeg.lang.NewProcessAnswer;
-import net.bramp.ffmpeg.probe.FFmpegChapter;
-import net.bramp.ffmpeg.probe.FFmpegProbeResult;
-import net.bramp.ffmpeg.probe.FFmpegStream;
+import com.desaerun.ffmpeg.fixtures.Samples;
+import com.desaerun.ffmpeg.lang.NewProcessAnswer;
+import com.desaerun.ffmpeg.probe.FFmpegChapter;
+import com.desaerun.ffmpeg.probe.FFmpegProbeResult;
+import com.desaerun.ffmpeg.probe.FFmpegStream;
 import org.apache.commons.lang3.math.Fraction;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +15,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.io.IOException;
 
-import static net.bramp.ffmpeg.FFmpegTest.argThatHasItem;
+import static com.desaerun.ffmpeg.FFmpegTest.argThatHasItem;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;

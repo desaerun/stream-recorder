@@ -1,9 +1,9 @@
-package net.bramp.ffmpeg.builder;
+package com.desaerun.ffmpeg.builder;
 
 import org.junit.Test;
 
-import static net.bramp.ffmpeg.builder.MetadataSpecifier.*;
-import static net.bramp.ffmpeg.builder.StreamSpecifier.id;
+import static com.desaerun.ffmpeg.builder.MetadataSpecifier.*;
+import static com.desaerun.ffmpeg.builder.StreamSpecifier.id;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 

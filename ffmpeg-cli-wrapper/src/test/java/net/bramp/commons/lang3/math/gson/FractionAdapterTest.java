@@ -1,4 +1,4 @@
-package net.bramp.commons.lang3.math.gson;
+package com.desaerun.commons.lang3.math.gson;
 
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;

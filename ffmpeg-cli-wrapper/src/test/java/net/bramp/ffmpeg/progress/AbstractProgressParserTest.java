@@ -1,4 +1,4 @@
-package net.bramp.ffmpeg.progress;
+package com.desaerun.ffmpeg.progress;
 
 import org.junit.Before;
 import org.junit.Rule;

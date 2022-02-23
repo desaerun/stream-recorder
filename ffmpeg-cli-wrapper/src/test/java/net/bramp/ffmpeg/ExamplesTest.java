@@ -1,9 +1,9 @@
-package net.bramp.ffmpeg;
+package com.desaerun.ffmpeg;
 
 import com.google.common.base.Joiner;
-import net.bramp.ffmpeg.builder.FFmpegBuilder;
-import net.bramp.ffmpeg.builder.FFmpegOutputBuilder;
-import net.bramp.ffmpeg.lang.NewProcessAnswer;
+import com.desaerun.ffmpeg.builder.FFmpegBuilder;
+import com.desaerun.ffmpeg.builder.FFmpegOutputBuilder;
+import com.desaerun.ffmpeg.lang.NewProcessAnswer;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -14,7 +14,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static net.bramp.ffmpeg.FFmpegTest.argThatHasItem;
+import static com.desaerun.ffmpeg.FFmpegTest.argThatHasItem;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 

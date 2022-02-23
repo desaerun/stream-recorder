@@ -1,7 +1,7 @@
-package net.bramp.ffmpeg.fixtures;
+package com.desaerun.ffmpeg.fixtures;
 
 import com.google.common.collect.ImmutableList;
-import net.bramp.ffmpeg.progress.Progress;
+import com.desaerun.ffmpeg.progress.Progress;
 
 import java.util.List;
 

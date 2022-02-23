@@ -1,8 +1,8 @@
-package net.bramp.ffmpeg.fixtures;
+package com.desaerun.ffmpeg.fixtures;
 
 import com.google.common.collect.ImmutableList;
 import com.google.errorprone.annotations.DoNotCall;
-import net.bramp.ffmpeg.info.Format;
+import com.desaerun.ffmpeg.info.Format;
 
 import java.util.List;
 

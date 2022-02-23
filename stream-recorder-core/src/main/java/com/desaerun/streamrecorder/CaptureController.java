@@ -1,16 +1,18 @@
 package com.desaerun.streamrecorder;
 
 import com.desaerun.streamrecorder.ffmpeg.CaptureThread;
-import com.desaerun.streamrecorder.ffmpeg.JobThread;
 import com.desaerun.streamrecorder.ffmpeg.config.AbstractCaptureConfig;
-import net.bramp.ffmpeg.FFmpeg;
-import net.bramp.ffmpeg.FFmpegExecutor;
-import net.bramp.ffmpeg.job.FFmpegJob;
+import com.desaerun.ffmpeg.FFmpeg;
+import com.desaerun.ffmpeg.FFmpegExecutor;
+import com.desaerun.ffmpeg.job.FFmpegJob;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class CaptureController {
     private static final Logger LOG = LoggerFactory.getLogger(CaptureController.class);
@@ -54,6 +56,12 @@ public class CaptureController {
         return captures.get(name);
     }
 
+    public void startAll() {
+        for (AbstractCaptureConfig config : configs) {
+            start(config);
+        }
+    }
+
     public CaptureThread start(AbstractCaptureConfig config) {
         CaptureThread captureThread = captures.get(config.getName());
 
@@ -70,13 +78,8 @@ public class CaptureController {
             LOG.info("starting CaptureThread...");
             captureThread.start();
         }
-        
+
         return captureThread;
     }
 
-    public void startAll() {
-        for (AbstractCaptureConfig config : configs) {
-            start(config);
-        }
-    }
 }
